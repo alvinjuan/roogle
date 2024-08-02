@@ -1,0 +1,233 @@
+/* - '*' selects everything in the document
+   - box-sizing: border-box; contains the border within the width of the element
+   - margin is spaces outside the container
+   - padding is spaces inside the container
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  /* sets every element to have this font */
+  color: #0f172a;
+}
+
+/* made the main more greedy in terms of taking up space */
+body {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* viewheight   cant be less than the 100% of the window*/
+}
+
+button {
+  cursor: pointer;
+}
+
+.google-header {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  /* allows the container to be flexible. def
+                  default is horizontal alignment (row orientation) */
+  justify-content: space-between;
+  /* how elements are laid out in horizontal axis like                                      word docs */
+  align-items: center;
+  /* changes the alignment in vertical axis */
+  padding: 1rem;
+  /* always use padding for controlling space around contents because 
+                  this is the one thats closest to the element*/
+  gap: 1rem;
+  /* spaces the items inside the flex container when the browsing window gets               smaller */
+}
+
+.nav-container {
+  display: flex;
+  /* becomes flexible container with horizontal orientation */
+  align-items: center;
+  gap: 1rem;
+  /* rem is relative value to the size of the root element */
+}
+
+.text-link,
+footer a {
+  color: inherit;
+  /* inherit the default color */
+  text-decoration: none;
+  /* remove the underline under the text */
+}
+
+/* shows the underline when hover over the text */
+.text-link:hover,
+footer a:hover {
+  text-decoration: underline;
+}
+
+.nav-container-second .text-link {
+  display: none;
+}
+
+.icon-link {
+  font-size: 1rem;
+  color: inherit;
+  width: 30px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 100%;
+  display: grid;
+  /* convenient for centering a singular item */
+  place-items: center;
+  /* centers the icon in the container */
+}
+
+/* shows the background of the icon when hovered over */
+.icon-link:hover {
+  background: rgb(232, 232, 232);
+}
+
+.img-button {
+  border: none;
+  /* removes the border of the img */
+  background: transparent;
+  /* turns the background of img to transparent */
+}
+
+.img-button img {
+  width: 30px;
+  aspect-ratio: 1 / 1;
+  /* square aspect ratio. matches the height with width */
+  overflow: hidden;
+  /* hides overflows outside the border */
+  border-radius: 100%;
+  /* turns the border to circular or rounded corner */
+}
+
+
+/* centers and vertically aligns the google, icons and buttons */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 1rem;
+}
+
+.title-text {
+  font-size: 5rem;
+  /* rem is a relative system. 2rem is double the size*/
+}
+
+.input-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid rgb(232, 232, 232);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+/* effects to the input bar. shows shadow when hovered and in focus */
+.input-bar:hover,
+.input-bar.input-bar:focus-within {
+  box-shadow: 0 0 4px 1px #ededed;
+}
+
+.input-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.input-bar div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input-icon {
+  background: transparent;
+  border: none;
+}
+
+.input-icon:hover {
+  opacity: 0.6;
+}
+
+.button-grid {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button-grid button {
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  background: #f7f7f7;
+  border-radius: 0.25rem;
+}
+
+.button-grid button:hover {
+  border: 1px solid slategray;
+}
+
+.language-text {
+  font-size: 0.7rem;
+}
+
+.language-link {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.language-link:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #f7f7f7;
+  font-size: 0.7rem;
+}
+
+footer>div {
+  padding: 1rem;
+}
+
+.footer-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  footer {
+    font-size: 0.8rem;
+  }
+
+  .footer-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .nav-container-second .text-link {
+    display: block;
+  }
+
+}
