@@ -37,7 +37,7 @@ To view the Google Home Page Replica:
 
 ## Screenshot
 
-![Google Home Page Replica Screenshot](path-to-screenshot.png)
+![Google Home Page Replica Screenshot](screenshot.png)
 
 ## License
 
