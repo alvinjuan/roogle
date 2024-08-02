@@ -1,6 +1,6 @@
 # Google Home Page Replica
 
-This project is a replica of the Google Home Page created using only HTML and CSS. It demonstrates the ability to recreate popular web pages using basic web development technologies.
+This project is a replica of the Google Home Page created using only HTML and CSS.
 
 ## Project Overview
 
@@ -13,8 +13,8 @@ The aim of this project is to replicate the minimalist design and layout of the 
 
 ## Technologies Used
 
-- **HTML5:** Used for the structure of the webpage.
-- **CSS3:** Used for styling the webpage to match the Google Home Page design.
+- **HTML5** 
+- **CSS3** 
 
 ## Features
 
