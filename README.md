@@ -38,11 +38,3 @@ To view the Google Home Page Replica:
 ## Screenshot
 
 ![Google Home Page Replica Screenshot](screenshot.png)
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
-
-You can replace `path-to-screenshot.png` with the actual path if you include a screenshot in the repository.
