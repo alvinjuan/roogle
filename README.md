@@ -1,4 +1,4 @@
-# Google Home Page Replica
+# Roogle
 
 This project is a replica of the Google Home Page created using only HTML and CSS.
 
